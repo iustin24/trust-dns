@@ -459,7 +459,6 @@ fn recursor_opts() -> ResolverOpts {
     options.recursion_desired = false;
     options.timeout = std::time::Duration::from_secs(1);
     options.attempts = 0;
-    options.ip_strategy = LookupIpStrategy::Ipv4Only;
     options.num_concurrent_reqs = 1;
     options
 }
